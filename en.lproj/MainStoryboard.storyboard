@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Buz Bug View Controller - Menu-->
+        <scene sceneID="5">
+            <objects>
+                <viewController title="Menu" id="2" customClass="BuzBugViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1M-15-tRN" userLabel="Backgruond">
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Title.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PBV-mp-Bea" userLabel="Title">
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="G88-lg-0oH"/>
+                                    <constraint firstAttribute="height" constant="76" id="bOm-FP-Ic9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h1M-15-tRN" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="1Jy-4d-91Z"/>
+                            <constraint firstItem="PBV-mp-Bea" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="91l-4S-pld"/>
+                            <constraint firstItem="h1M-15-tRN" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="EC8-bg-QcC"/>
+                            <constraint firstItem="h1M-15-tRN" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="p9B-SI-7hR"/>
+                            <constraint firstItem="h1M-15-tRN" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="yUY-MP-dW8"/>
+                            <constraint firstItem="PBV-mp-Bea" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="zGR-VO-ztq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Title.jpg" width="468" height="60"/>
+    </resources>
+    <classes>
+        <class className="BuzBugViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BuzBugViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
